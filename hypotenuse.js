@@ -1,7 +1,12 @@
 // hypothenos finder
 
-let a = 15
-let b = 8
+const buttonElem = document.querySelector('button')
 
-let hyp = Math.sqrt((a*a)+(b*b))
-console.log(hy)
+buttonElem.addEventListener('click', ()=>{
+    
+    let a = Number(document.getElementById('a').value)
+    let b = Number(document.getElementById('b').value)
+    let hyp = Math.sqrt((a*a)+(b*b))
+    document.querySelector('h2').innerText += hyp
+})
+
